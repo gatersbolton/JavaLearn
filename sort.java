@@ -1,5 +1,21 @@
 package bbb;
 import java.util.*;
+public class anothersort{
+    public static class win{
+        int x,y;
+        int l,h;
+        int pid,level;
+        boolean open;
+        public int getlevel() {
+            return level;
+        }
+    }
+    public static void main(String[] args) {
+        List<win> a=new ArrayList<>();
+        Comparator<win> winComparator = Comparator.comparing(win::getlevel);
+        Collections.sort(a, winComparator);
+    }
+}
 
 public class mysort {
     private String name;
